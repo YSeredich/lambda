@@ -2,12 +2,295 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Lambda</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-        
+        <header>
+            <div class="navbar" id="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu" type="button">
+                            <span class="sr-only">Open nav</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar">
+                            <li><a href="#navbar">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#ingredients">Ingredients</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#reservation">Reservations</a></li>
+                        </ul>
+                        <div class="social">
+                            <i class="twitter"></i>
+                            <i class="youtube"></i>
+                            <i class="facebook"></i>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <section class="promo container">
+                <p class="slogan">the right ingredients for the right food</p>
+                <img class="separator promo__separator" src="#" alt="">
+                <a href="#" class="btn btn-book"></a>
+                <a href="#" class="btn btn-menu"></a>
+            </section>
+        </header>
+        <main>
+            <section class="about container" id="about">
+                <div class="row">
+                    <div class="about__info col-md-6">
+                        <h2 class="about__title">Just the right food</h2>
+                        <img class="separator about__separator" src="#" alt="">
+                        <p class="about__text">
+                            If you’ve been to one of our restaurants, you’ve seen – and tasted –
+                            what keeps our customers coming back for more. Perfect materials and
+                            freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees
+                            make us hard to resist! Stop in today and check us out!
+                        </p>
+                        <div class="about__cook">
+                            <img src="#" alt="">
+                        </div>
+                    </div>
+                    <div class="about__img col-md-6">
+                        <img class="about__dish" src="#" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="ingredients" id="ingredients">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="ingredients__title">Fine ingredients</h2>
+                        <img class="separator ingredients__separator" src="#" alt="">
+                        <p class="ingredients__text">
+                            If you’ve been to one of our restaurants, you’ve seen – and tasted –
+                            what keeps our customers coming back for more. Perfect materials and
+                            freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees
+                            make us hard to resist! Stop in today and check us out!
+                        </p>
+                        <div class="ingredients__photos">
+                            <img src="#" alt="">
+                            <img src="#" alt="">
+                            <img src="#" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu" id="menu">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="menu__appetisers">
+                            <h2 class="menu__title">Appetisers</h2>
+                            <img class="separator menu__separator" src="#" alt="">
+                            <div class="dishes">
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__salads">
+                            <h2 class="menu__title">Salads</h2>
+                            <img class="separator menu__separator" src="#" alt="">
+                            <div class="dishes">
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish special">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu__starters">
+                            <h2 class="menu__title">Starters</h2>
+                            <img class="separator menu__separator" src="#" alt="">
+                            <div class="dishes">
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__main-dishes">
+                            <h2 class="menu__title">Main Dishes</h2>
+                            <img class="separator menu__separator" src="#" alt="">
+                            <div class="dishes">
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish special">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                                <div class="dish">
+                                    <h3 class="dish__title"></h3>
+                                    <div class="dish__price"></div>
+                                    <p class="dish__description"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews" id="reviews">
+                <div class="container">
+                    <h2 class="title reviews__title">Guest Reviews</h2>
+                    <img class="separator review__separator" src="#" alt="">
+                    <p class="review__text"></p>
+                    <p class="review__author"></p>
+                </div>
+            </section>
+            <section class="reservation" id="reservation">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="title reservation__title">Just the right food</h2>
+                        <img class="separator reservation__separator" src="#" alt="">
+                        <p class="reservation__text">
+                            If you’ve been to one of our restaurants, you’ve seen – and tasted – what
+                            keeps our customers coming back for more. Perfect materials and freshly
+                            baked food.
+                        </p>
+                        <p class="reservation__text">
+                            Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to
+                            resist! Stop in today and check us out! Perfect materials and freshly baked
+                            food.
+                        </p>
+                        <div class="reservation__form">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="input-name">Name</label>
+                                        <input id="input-name" type="text" placeholder="your name *" required>
+                                        <label for="input-date">Date</label>
+                                        <input id="input-date" type="date" placeholder="date *" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="input-email">E-mail</label>
+                                        <input id="input-email" type="email" placeholder="your email *" required>
+                                        <label for="party-number">Party number</label>
+                                        <select name="party-number" id="party-number">
+                                            <option value="unknown">party number</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit">Book now!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="footer__about col-md-4">
+                    <h2 class="title footer__title">About us</h2>
+                    <img class="separator footer__separator" src="#" alt="">
+                    <p class="footer__about">
 
-
+                    </p>
+                </div>
+                <div class="footer__opening-hours col-md-2">
+                    <h2 class="title footer__title">Opening Hours</h2>
+                    <img class="separator footer__separator" src="#" alt="">
+                    <p class="opening-hours">
+                        <span class="day">Mon-Thu: </span>
+                        <span class="hours">7:00am-8:00pm</span>
+                        <span class="day">Fri-Sun: </span>
+                        <span class="hours">7:00am-10:00pm</span>
+                    </p>
+                    <div class="cards">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="footer__location col-md-2">
+                    <h2 class="title footer__title">Our Location</h2>
+                    <img class="separator footer__separator" src="#" alt="">
+                    <p class="location__address">
+                        <span>19th Paradise Street Sitia</span>
+                        <span>128 Meserole Avenue</span>
+                    </p>
+                    <div class="footer__social">
+                        <i class="icon"></i>
+                        <i class="icon"></i>
+                        <i class="icon"></i>
+                        <i class="icon"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
