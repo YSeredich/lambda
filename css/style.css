@@ -1,0 +1,21 @@
+
+.header {
+    height: 750px;
+    background: #1b1b16 url('../img/top_bg.jpg') center no-repeat;
+    color: #fff;
+}
+
+.ingredients {
+    height: 758px;
+    background: #2f2e2f url('../img/ingredients_bg.jpg') center no-repeat;
+}
+
+.reviews {
+    height: 758px;
+    background: #24272f url('../img/reviews_bg.jpg') center no-repeat;
+}
+
+.footer {
+    background-color: #191919;
+    color: #fff;
+}
