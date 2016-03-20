@@ -6,8 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Lambda</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,40 +23,46 @@
     </head>
     <body>
         <header class="header">
-            <div class="navbar" id="navbar">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a href="#" class="navbar-brand">lambda</a>
-                        <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu" type="button">
-                            <span class="sr-only">Open nav</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="responsive-menu">
-                        <ul class="nav navbar">
-                            <li><a href="#navbar">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#ingredients">Ingredients</a></li>
-                            <li><a href="#menu">Menu</a></li>
-                            <li><a href="#reviews">Reviews</a></li>
-                            <li><a href="#reservation">Reservations</a></li>
-                        </ul>
-                        <div class="social">
-                            <i class="twitter"></i>
-                            <i class="youtube"></i>
-                            <i class="facebook"></i>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="navbar navbar-static-top" id="navbar">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a href="#" class="navbar-brand">lambda</a>
+                                <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu" type="button">
+                                    <span class="sr-only">Open nav</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="responsive-menu">
+                                <ul class="nav navbar-nav">
+                                    <li><a class="nav__link" href="#navbar">Home</a></li>
+                                    <li><a class="nav__link" href="#about">About</a></li>
+                                    <li><a class="nav__link" href="#ingredients">Ingredients</a></li>
+                                    <li><a class="nav__link" href="#menu">Menu</a></li>
+                                    <li><a class="nav__link" href="#reviews">Reviews</a></li>
+                                    <li><a class="nav__link" href="#reservation">Reservations</a></li>
+                                </ul>
+                                <div class="social">
+                                    <i class="twitter"></i>
+                                    <i class="youtube"></i>
+                                    <i class="facebook"></i>
+                                </div>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <section class="promo container">
-                <p class="slogan">the right ingredients for the right food</p>
+                <h1 class="slogan">the right ingredients for the right food</h1>
                 <img class="separator promo__separator" src="img/separator_big.png" alt="">
-                <a href="#" class="btn btn-book"></a>
-                <a href="#" class="btn btn-menu"></a>
+                <div class="btn-area">
+                    <a href="#reservation" class="btn btn-book">Book a table</a>
+                    <a href="#menu" class="btn btn-menu">See the menu</a>
+                </div>
             </section>
         </header>
         <main>
@@ -60,7 +70,7 @@
                 <div class="row">
                     <div class="about__info col-md-6">
                         <h2 class="about__title">Just the right food</h2>
-                        <img class="separator about__separator" src="img/separator_small.png" alt="">
+                        <img class="separator about__separator" src="img/separator_small_yellow.png" alt="">
                         <p class="about__text">
                             If you’ve been to one of our restaurants, you’ve seen – and tasted –
                             what keeps our customers coming back for more. Perfect materials and
@@ -79,7 +89,8 @@
             <section class="ingredients" id="ingredients">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="empty col-md-6"></div>
+                        <div class="ingredients-content col-md-6">
                             <h2 class="ingredients__title">Fine ingredients</h2>
                             <img class="separator ingredients__separator" src="img/separator_small.png" alt="">
                             <p class="ingredients__text">
@@ -102,43 +113,55 @@
                     <div class="col-md-6">
                         <div class="menu__appetisers">
                             <h2 class="menu__title">Appetisers</h2>
-                            <img class="separator menu__separator" src="img/separator_small.png" alt="">
+                            <img class="separator menu__separator" src="img/separator_small_yellow.png" alt="">
                             <div class="dishes">
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Tzatslkl</div>
+                                        <div class="dish__price">$3.99</div>
+                                    </div>
+                                    <p class="dish__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                                 </div>
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Aubergine Salad</div>
+                                        <div class="dish__price">$5.50</div>
+                                    </div>
+                                    <p class="dish__description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                                 </div>
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Aubergine Salad</div>
+                                        <div class="dish__price">$5.25</div>
+                                    </div>
+                                    <p class="dish__description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__salads">
                             <h2 class="menu__title">Salads</h2>
-                            <img class="separator menu__separator" src="img/separator_small.png" alt="">
+                            <img class="separator menu__separator" src="img/separator_small_yellow.png" alt="">
                             <div class="dishes">
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Olive Special</div>
+                                        <div class="dish__price">$5.99</div>
+                                    </div>
+                                    <p class="dish__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                                 </div>
                                 <div class="dish special">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Greek Salad</div>
+                                        <div class="dish__price">$5.50</div>
+                                    </div>
+                                    <p class="dish__description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                                 </div>
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Gusto Salad</div>
+                                        <div class="dish__price">$5.25</div>
+                                    </div>
+                                    <p class="dish__description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                                 </div>
                             </div>
                         </div>
@@ -146,43 +169,55 @@
                     <div class="col-md-6">
                         <div class="menu__starters">
                             <h2 class="menu__title">Starters</h2>
-                            <img class="separator menu__separator" src="img/separator_small.png" alt="">
+                            <img class="separator menu__separator" src="img/separator_small_yellow.png" alt="">
                             <div class="dishes">
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Halouml</div>
+                                        <div class="dish__price">$3.99</div>
+                                    </div>
+                                    <p class="dish__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                                 </div>
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Spinach Ple</div>
+                                        <div class="dish__price">$5.50</div>
+                                    </div>
+                                    <p class="dish__description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="menu__main-dishes">
                             <h2 class="menu__title">Main Dishes</h2>
-                            <img class="separator menu__separator" src="img/separator_small.png" alt="">
+                            <img class="separator menu__separator" src="img/separator_small_yellow.png" alt="">
                             <div class="dishes">
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Cornish Marckerel</div>
+                                        <div class="dish__price">$5.99</div>
+                                    </div>
+                                    <p class="dish__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                                 </div>
                                 <div class="dish special">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Roast Lamb</div>
+                                        <div class="dish__price">$5.50</div>
+                                    </div>
+                                    <p class="dish__description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                                 </div>
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Fried Chicken</div>
+                                        <div class="dish__price">$5.25</div>
+                                    </div>
+                                    <p class="dish__description">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                                 </div>
                                 <div class="dish">
-                                    <h3 class="dish__title"></h3>
-                                    <div class="dish__price"></div>
-                                    <p class="dish__description"></p>
+                                    <div class="dish__title-price clearfix">
+                                        <div class="dish__title">Pastitsio</div>
+                                        <div class="dish__price">$5.99</div>
+                                    </div>
+                                    <p class="dish__description">Refreshing traditional cucumber and garlic yoghurt dip.</p>
                                 </div>
                             </div>
                         </div>
@@ -191,10 +226,21 @@
             </section>
             <section class="reviews" id="reviews">
                 <div class="container">
-                    <h2 class="title reviews__title">Guest Reviews</h2>
-                    <img class="separator review__separator" src="img/separator_small.png" alt="">
-                    <p class="review__text"></p>
-                    <p class="review__author"></p>
+                    <div class="row">
+                        <div class="col-md-2 empty"></div>
+                        <div class="col-md-8 reviews__content">
+                            <h2 class="title reviews__title">Guest Reviews</h2>
+                            <img class="separator review__separator" src="img/separator_small.png" alt="">
+                            <p class="review__text">
+                                If you’ve been to one of our restaurants, you’ve seen – and
+                                tasted – what keeps our customers coming back for more. Perfect materials and
+                                freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make
+                                us hard to resist! Stop in today and check us out!
+                            </p>
+                            <p class="review__author">- food inc, New York</p>
+                        </div>
+                        <div class="col-md-2 empty"></div>
+                    </div>
                 </div>
             </section>
             <section class="reservation container" id="reservation">
@@ -205,9 +251,9 @@
                     <div class="col-md-3">
                         <img src="img/reserv_2.jpg" alt="table appointments">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 reservation__content">
                         <h2 class="title reservation__title">Just the right food</h2>
-                        <img class="separator reservation__separator" src="img/separator_small.png" alt="">
+                        <img class="separator reservation__separator" src="img/separator_small_yellow.png" alt="">
                         <p class="reservation__text">
                             If you’ve been to one of our restaurants, you’ve seen – and tasted – what
                             keeps our customers coming back for more. Perfect materials and freshly
@@ -219,19 +265,19 @@
                             food.
                         </p>
                         <div class="reservation__form">
-                            <form action="" method="post">
+                            <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label for="input-name">Name</label>
-                                        <input id="input-name" type="text" placeholder="your name *" required>
-                                        <label for="input-date">Date</label>
-                                        <input id="input-date" type="date" placeholder="date *" required>
+                                        <label class="lbl" for="input-name">Name</label>
+                                        <input class="field" id="input-name" type="text" placeholder="your name *" required>
+                                        <label class="lbl" for="input-date">Date</label>
+                                        <input class="field" id="input-date" type="date" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="input-email">E-mail</label>
-                                        <input id="input-email" type="email" placeholder="your email *" required>
-                                        <label for="party-number">Party number</label>
-                                        <select name="party-number" id="party-number">
+                                        <label class="lbl" for="input-email">E-mail</label>
+                                        <input class="field" id="input-email" type="email" placeholder="your email *" required>
+                                        <label class="lbl" for="party-number">Party number</label>
+                                        <select class="field" name="party-number" id="party-number">
                                             <option value="unknown">party number</option>
                                             <option value="">1</option>
                                             <option value="">2</option>
@@ -241,7 +287,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <button type="submit">Book now!</button>
+                                <button class="btn reservation__btn" type="submit">Book now!</button>
                             </form>
                         </div>
                     </div>
@@ -251,22 +297,23 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="footer__about col-md-4">
+                    <div class="footer__about col-md-6">
                         <h2 class="title footer__title">About us</h2>
                         <img class="separator footer__separator" src="img/separator_small.png" alt="">
-                        <p class="footer__about">
-
+                        <p class="footer__text">
+                            Lambda's new and expanded Chelsea location represents a truly authentic
+                            <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming
+                            bowls of café.
+                        </p>
+                        <p class="footer__text">
+                            Lamda the best restaurant in town
                         </p>
                     </div>
-                    <div class="footer__opening-hours col-md-2">
+                    <div class="footer__opening-hours col-md-3">
                         <h2 class="title footer__title">Opening Hours</h2>
                         <img class="separator footer__separator" src="img/separator_small.png" alt="">
-                        <p class="opening-hours">
-                            <span class="day">Mon-Thu: </span>
-                            <span class="hours">7:00am-8:00pm</span>
-                            <span class="day">Fri-Sun: </span>
-                            <span class="hours">7:00am-10:00pm</span>
-                        </p>
+                        <p  class="opening-hours"><b>Mon-Thu: </b>7:00am-8:00pm</p>
+                        <p  class="opening-hours"><b>Fri-Sun: </b>7:00am-10:00pm</p>
                         <div class="cards">
                             <i></i>
                             <i></i>
@@ -274,7 +321,7 @@
                             <i></i>
                         </div>
                     </div>
-                    <div class="footer__location col-md-2">
+                    <div class="footer__location col-md-3">
                         <h2 class="title footer__title">Our Location</h2>
                         <img class="separator footer__separator" src="img/separator_small.png" alt="">
                         <p class="location__address">
