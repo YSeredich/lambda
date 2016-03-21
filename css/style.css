@@ -24,7 +24,19 @@ h3,
     color: #fff;
 }
 
-.navbar-brand {
+.navbar__brand {
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin-right: 130px;
+}
+
+.brand__link {
+    display: inline-block;
+    width: 156px;
+    height: 93px;
+    padding-top: 30px;
+
     color: #fff;
     text-transform: uppercase;
     font-family: 'Yeseva One', 'Times New Roman', cursive;
@@ -33,17 +45,49 @@ h3,
     background:url('../img/logo.png') center no-repeat;
 }
 
-.navbar-brand:hover {
-    color: #fff;
+.brand__link:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.navbar__nav {
+    float: left;
+    width: auto;
+}
+
+.nav__item {
+    display: inline-block;
+    list-style: none;
 }
 
 .nav__link {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    height: 93px;
+
     color: #fff;
     font-family: 'Gentium Book Basic','Times New Roman', serif;
     font-size: 21px;
 }
 
+.nav__link:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.nav__link:hover::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -1px;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .promo {
+    padding-top: 85px;
     text-align: center;
 }
 
@@ -75,6 +119,14 @@ h3,
     color: #fff;
 }
 
+.about,
+.reservation {
+    background: #fff url('../img/pattern_about.png');
+}
+
+.menu {
+    background: #fff url('../img/pattern_menu.png');
+}
 .about__info {
     text-align: center;
 }
@@ -127,7 +179,26 @@ h3,
 
 .special {
     position: relative;
-    border: 1px solid rgba(200, 159, 45, 0.5);
+    border-left: 1px solid #f2efe1;
+    border-right: 1px solid #d4b55d;
+}
+
+.special::before,
+.special::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(#f2efe1, #d4b55d);
+}
+
+.special::before {
+    top: 0;
+}
+
+.special::after {
+    bottom: 0;
 }
 
 .special .dish__title-price::before {
@@ -142,7 +213,7 @@ h3,
     font-family: 'Lato', Arial, sans-serif;
     font-size: 14px;
 
-    background: #c89f2d url('../img/special.png') center no-repeat;
+    background: url('../img/special.png') center no-repeat;
     z-index: 10;
 }
 
@@ -219,6 +290,7 @@ h3,
 
 .footer__title {
     color: #fff;
+    font-size: 21px;
 }
 
 .footer__about,
@@ -227,9 +299,54 @@ h3,
     text-align: center;
 }
 
-fonts {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-family: 'Yeseva One', 'Times New Roman', cursive;
-    font-family: 'Gentium Book Basic','Times New Roman', serif;
-    font-family: 'Lato', Arial, sans-serif;
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.navbar__social .sprite {
+    display: inline-block;
+    height: 21px;
+    width: 20px;
+}
+
+.sprite-y-tw {
+    background-position: -5px -5px;
+}
+
+.sprite-y-yt {
+    background-position: -41px -5px;
+}
+
+.sprite-y-fb {
+    background-position: -72px -5px;
+}
+
+.sprite-cards {
+    width: 120px;
+    height: 15px;
+    background-position: -96px -5px;
+}
+
+.footer__social .sprite {
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+}
+
+.sprite-fb {
+    background-position: -226px -5px;
+}
+
+.sprite-yt {
+    background-position: -245px -5px;
+}
+
+.sprite-tw {
+    background-position: -270px -5px;
+}
+
+.sprite-wd {
+    background-position: -297px -5px;
 }
